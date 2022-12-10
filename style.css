@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
+
+* {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background-color: #252525;
+    color: white;
+    margin: 1em 5em;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main > * {
+    max-width: 50%;
+}
+
+.card-tn {
+    display:table;
+    position:relative;
+    border-radius: 1em;
+}
+
+.card-tn video {
+    position: relative;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card small {
+    color: red;
+}
+
+.card {
+    width: 95%;
+}
+
+header video {
+    height: auto;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+section > .card {
+    max-width: 47.5%;
+    height: auto;
+}
+
+section .card video {
+    width: 420px;
+    height: auto;
+}
+
+section .card .card-desc {
+    font-size: large;
+}
+
+
+@media only screen and (max-width: 992px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    main > * {
+        max-width: 100%;
+    }
+    header > .card {
+        width: 100%;
+    }
+}
+
+/* Play button */
+
+.card-tn{
+    display:table;
+    position:relative;
+}
+.playpause {
+    background-image:url("./assets/play.svg");
+    background-repeat:no-repeat;
+    width:25%;
+    height:25%;
+    position:absolute;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+}
