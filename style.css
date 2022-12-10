@@ -79,7 +79,16 @@ section .card .card-desc {
         width: 100%;
     }
 }
-
+@media only screen and (max-width: 576px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    section > .card {
+        max-width: 100%;
+    }
+}
 /* Play button */
 
 .card-tn{

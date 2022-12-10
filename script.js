@@ -18,7 +18,7 @@ fetch('./data/data.json').then(
             <div class="card">
                 <div class="card-tn">
                     <video class="video" poster="${card.thumbnail}" muted>
-                        <source src="${card.video}" type="video/mp4" />
+                        <source src=${card.video} type="video/mp4" />
                     </video>
                     <div class="playpause"></div>
                 </div>
